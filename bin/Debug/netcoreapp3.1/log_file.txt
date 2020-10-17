@@ -1,1 +1,5 @@
 2020-10-17 17:13:36.1812|INFO|DotNetDbMidterm.Program|logggg
+2020-10-17 17:36:51.0656|INFO|DotNetDbMidterm.Program|logggg
+2020-10-17 17:46:34.5557|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 17:47:22.7413|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 17:53:36.6667|INFO|DotNetDbMidterm.Program|Program started

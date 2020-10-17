@@ -8,11 +8,16 @@ namespace DotNetDbMidterm
     {
         static void Main(string[] args)
         {
-            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
-
             // create instance of Logger
+            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
-            logger.Info("logggg");
+            logger.Info("Program started");
+            
+            //example tickets
+            Bug hmm = new Bug(123,"summ","status","priority","submitter","assigned","watching","severity");
+            Enhancement hmm2 = new Enhancement(123,"summ","status","priority","submitter","assigned","watching","software","cost","reason","estimate");
+            Task hmm3 = new Task(123,"summ","status","priority","submitter","assigned","watching","projectName","duedate");
+
             //Main Menu / Screen
             string menuInput = "";
             string file = "Tickets.csv";
@@ -20,15 +25,13 @@ namespace DotNetDbMidterm
 
             //loop menu options until quit is selected
             while (menuInput != "0") {
-                Console.WriteLine("What would you like to do?");
-                Console.WriteLine("[1]Display Tickets");
-                Console.WriteLine("[2]Create Ticket");
-                Console.WriteLine("[0]Quit");
+                //display main menu
+                Ui.DisplayMenu("main");
                 //grab input
                 menuInput = Console.ReadLine();
-
-                //Display tickets... ie read file and display data
+                //Display menu, ask which tickets to display... ie read file and display data
                 if(menuInput == "1") {
+                    Ui.DisplayMenu("display");
                     //look for file if its not there create it
                     if(System.IO.File.Exists(file)) {
                         StreamReader sr = new StreamReader(file);

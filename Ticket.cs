@@ -11,6 +11,15 @@ namespace DotNetDbMidterm
         private string Assigned{get;}
         private string Watching{get;}
 
+        public Ticket(int ticketID, string summary, string status, string priority, string submitter, string assigned, string watching) {
+            this.TicketID = ticketID;
+            this.Summary = summary;
+            this.Status = status;
+            this.Priority = priority;
+            this.Submitter = submitter;
+            this.Assigned = assigned;
+            this.Watching = watching;
+        }
         public override string ToString() {
             return TicketID.ToString() + Summary + Status + Priority + Submitter 
             + Assigned + Watching;
