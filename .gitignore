@@ -345,7 +345,10 @@ ASALocalRun/
 # BeatPulse healthcheck temp database 
 healthchecksdb
 DotNetDbMidterm.csproj
-DotNetDbMidterm.csproj
 obj/DotNetDbMidterm.csproj.nuget.dgspec.json
 obj/project.nuget.cache
 obj/Debug/netcoreapp3.1/DotNetDbMidterm.csprojAssemblyReference.cache
+project.code-workspace
+obj/project.assets.json
+obj/Debug/netcoreapp3.1/DotNetDbMidterm.assets.cache
+
