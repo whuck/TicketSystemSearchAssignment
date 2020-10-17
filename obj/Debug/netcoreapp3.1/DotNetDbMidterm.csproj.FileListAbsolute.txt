@@ -11,3 +11,7 @@ C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDb
 C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.dll
 C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.pdb
 C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.genruntimeconfig.cache
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.csproj.CopyComplete
