@@ -1,0 +1,13 @@
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.exe
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.deps.json
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.runtimeconfig.json
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.runtimeconfig.dev.json
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.dll
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\bin\Debug\netcoreapp3.1\DotNetDbMidterm.pdb
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.csprojAssemblyReference.cache
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.AssemblyInfoInputs.cache
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.AssemblyInfo.cs
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.csproj.CoreCompileInputs.cache
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.dll
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.pdb
+C:\Users\Wilhab\Documents\skool\DotNetDbMidterm\obj\Debug\netcoreapp3.1\DotNetDbMidterm.genruntimeconfig.cache
