@@ -1,0 +1,6 @@
+namespace DotNetDbMidterm
+{
+    class Bug
+    { 
+    }
+}

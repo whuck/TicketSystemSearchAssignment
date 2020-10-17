@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using NLog.Web;
 
 namespace DotNetDbMidterm
 {
@@ -7,7 +8,11 @@ namespace DotNetDbMidterm
     {
         static void Main(string[] args)
         {
+            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
 
+            // create instance of Logger
+            var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
+            logger.Info("logggg");
             //Main Menu / Screen
             string menuInput = "";
             string file = "Tickets.csv";
