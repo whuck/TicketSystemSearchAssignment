@@ -2,8 +2,6 @@ namespace DotNetDbMidterm
 {
     class Enhancement : Ticket
     { 
-        //from Ticket --> TicketID, Summary, Status, Priority, Submitter, Assigned, Watching, 
-        //Software, Cost, Reason, Estimate
         private string Software {get;}
         private string Cost {get;}
         private string Reason {get;}
@@ -18,14 +16,7 @@ namespace DotNetDbMidterm
         {
             return $"{base.ToString()}{this.Software,9}{this.Cost,5}{this.Reason,7}{this.Estimate,9}";
         }
-        // public override string[] GetProps() {
-        //     string[] baseProps = base.GetProps();
-        //     string[] enhProps = {"Software","Cost","Reason","Estimate"};
-        //     string[] output = new string[baseProps.Length + enhProps.Length];
-        //     baseProps.CopyTo(output,0);
-        //     enhProps.CopyTo(output,baseProps.Length);
-        //     return output;
-        // }
+
         public override string GetFileLineString() {
             return base.GetFileLineString()+$",{this.Software},{this.Cost},{this.Reason},{this.Estimate}";
         }

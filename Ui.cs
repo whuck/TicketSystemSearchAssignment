@@ -38,7 +38,6 @@ namespace DotNetDbMidterm
                 DisplayTicketFooter();            
         }
         public static void DisplayTicket(Ticket t) {
-            //Console.WriteLine("display ticket");
             Console.WriteLine(t.ToString());
         }
         private static void DisplayTicketHeader(string type) {

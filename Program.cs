@@ -15,20 +15,6 @@ namespace DotNetDbMidterm
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             logger.Info("Program started");
             
-            //example tickets
-            Bug hmm = new Bug("123","summ","status","priority","submitter","assigned","watching","severity");
-            Enhancement hmm2 = new Enhancement("123","summ","status","priority","submitter","assigned","watching","software","cost","reason","estimate");
-            Task hmm3 = new Task("123","summ","status","priority","submitter","assigned","watching","projectName","duedate");
-            
-            //var props = typeof(Bug).GetProperties();
-            
-            //Console.WriteLine("p.asdfasdf");
-            //foreach(var p in typeof(Ticket).GetProperties(BindingFlags.NonPublic)) {
-            // foreach(var p in typeof(Ticket).GetProperties()) {
-            //     Console.WriteLine(p.Name);
-            // }
-        
-           
             //display program title
             Ui.DisplayMenu("title");
             
@@ -53,15 +39,14 @@ namespace DotNetDbMidterm
                         CreateTickets(); //loops until  back to main menu is selected
                         break;
                     default : break;
-                }//switch
-            }//while
-        }//Main()
+                }
+            }
+        }
         static void DisplayTickets() {
             string menuInput = "";
             while (menuInput != "0") {
                 Ui.DisplayMenu("display");
                 menuInput = Console.ReadLine();
-                //List<Ticket> ticketList = new List<Ticket>();
                 switch (menuInput) {
                     case "1" : //display all
                         List<List<Ticket>> allTickets = new List<List<Ticket>>();
@@ -83,9 +68,9 @@ namespace DotNetDbMidterm
                         Ui.DisplayTickets(TicketList.tasks,"tasks");
                         break;
                     default : break;
-                }//switch
-            }//while
-        }//displayTickets()
+                }
+            }
+        }
         static void CreateTickets() {
             string menuInput ="";
             while (menuInput != "0") {
@@ -94,39 +79,22 @@ namespace DotNetDbMidterm
                 switch (menuInput) {
                     case "1" : //create bug
                         Bug b = (Bug) CreateTicket("bug");
-                        //TicketList.bugs.Add(CreateTicket("bug"));
                         TicketList.bugs.Add(b);
                         FileWriter.WriteToFile(b.GetFileLineString(),"bug");
                         break;
                     case "2" : //create enhancement
                         Enhancement e = (Enhancement) CreateTicket("enhancement");
-                        //TicketList.enhancements.Add(CreateTicket("enhancement"));
                         TicketList.enhancements.Add(e);
                         FileWriter.WriteToFile(e.GetFileLineString(),"enhancement");
-                        //CreateTicket("enhancement");
                         break;
                     case "3" : //create task
                         Task t = (Task) CreateTicket("task");
                         TicketList.tasks.Add(t);
                         FileWriter.WriteToFile(t.GetFileLineString(),"task");
-                        //TicketList.tasks.Add(CreateTicket("task"));
-                        //CreateTicket("task");
                         break;
-                }//switch
-            }//while
-        }//CreateTickets()
-            //         switch (arg) {
-            //     case "bugs" :
-            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching
-            //         return new Bug(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7]);
-            //     case "enhancements" :
-            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, Software, Cost, Reason, Estimate
-            //         return new Enhancement(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8],lineItems[9],lineItems[10]);
-            //     case "tasks" :
-            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, ProjectName, DueDate
-            //         return new Task(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8]);
-            //     default : return null;
-            // }
+                }
+            }
+        }
         static Ticket CreateTicket(string type) {
             string[] args;
             switch (type) {
@@ -144,14 +112,7 @@ namespace DotNetDbMidterm
         }
         static string[] GetTicketData(string[] props,string type) {
             string[] output = new string[props.Length];
-            // foreach(var p in props) {
-            //     Ui.GetDetailPrompt(p);
-            // }
-            // int nextID = (type == "bugs") ? TicketList.getNextTicketID("bugs") : 
-            //     (type == "enhancements") ? TicketList.getNextTicketID("bugs") : 
-            //     (type == "tasks") ? TicketList.getNextTicketID("bugs") : 0;
             int nextID = TicketList.getNextTicketID(type);
-            //string fileName = (arg == "bugs") ? bugsFile : (arg == "enhancements") ? enhancementsFile : (arg == "tasks") ? tasksFile : null;
             output[0] = nextID.ToString();
             for(int i = 1; i < props.Length; i++) {
                 Ui.GetDetailPrompt(props[i]);
@@ -159,5 +120,5 @@ namespace DotNetDbMidterm
             }
             return output;
         }
-    }//class
-}//namespace
+    }
+}
