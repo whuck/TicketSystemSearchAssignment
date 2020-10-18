@@ -2,8 +2,11 @@ namespace DotNetDbMidterm
 {
     class Task : Ticket
     { 
-        private string ProjectName {get;}
-        private string DueDate {get;}
+        //Task Class, child of ticket with its own properties
+        //overriden ToString for terminal output formatting
+        //overriden GetFileLineString for easy file writing
+        private string ProjectName;
+        private string DueDate;
         public Task(string ticketID, string summary, string status, string priority, string submitter, string assigned, string watching, string projectName, string dueDate) : base(ticketID, summary, status, priority, submitter, assigned, watching){
             this.ProjectName = projectName;
             this.DueDate = dueDate;

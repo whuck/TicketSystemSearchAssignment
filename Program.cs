@@ -1,18 +1,22 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Reflection;
 using NLog.Web;
 
 namespace DotNetDbMidterm
 {
     class Program
     {   
+        //Main Program
+        //contains static logger object, static TicketList object for storing all the ticket objects created
+        //contains menu loops for displaying / creating tickets
+        public static string path = Directory.GetCurrentDirectory() + "\\nlog.config";
+        public static NLog.Logger logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
         static void Main(string[] args)
         {
             // create instance of Logger
-            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
-            var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
+            //string path = Directory.GetCurrentDirectory() + "\\nlog.config";
+            //var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             logger.Info("Program started");
             
             //display program title
@@ -21,8 +25,10 @@ namespace DotNetDbMidterm
             //read all the files and dump tickets into TicketList Class
             TicketList.bugs = FileReader.ReadFile("bugs");
             logger.Info(TicketList.bugs.Count+" bug tickets added! next id = " + TicketList.getNextTicketID("bugs"));
+
             TicketList.enhancements = FileReader.ReadFile("enhancements");
             logger.Info(TicketList.bugs.Count+" enhancement tickets added! next id = " + TicketList.getNextTicketID("enhancements"));
+
             TicketList.tasks = FileReader.ReadFile("tasks");
             logger.Info(TicketList.bugs.Count+" task tickets added! next id = " + TicketList.getNextTicketID("tasks"));
             
@@ -42,6 +48,7 @@ namespace DotNetDbMidterm
                 }
             }
         }
+        //display tickets in TicketList, which tickets based on user input
         static void DisplayTickets() {
             string menuInput = "";
             while (menuInput != "0") {
@@ -56,21 +63,19 @@ namespace DotNetDbMidterm
                         Ui.DisplayAllTickets(allTickets);
                         break;
                     case "2" : //display bugs
-                        //ticketList = FileReader.ReadFile("bugs");
                         Ui.DisplayTickets(TicketList.bugs,"bugs");
                         break;
                     case "3" : //display enhancement
-                        //ticketList = FileReader.ReadFile("enhancements");
                         Ui.DisplayTickets(TicketList.enhancements, "enhancements");
                         break;
                     case "4" : //display task
-                        //ticketList = FileReader.ReadFile("tasks");
                         Ui.DisplayTickets(TicketList.tasks,"tasks");
                         break;
                     default : break;
                 }
             }
         }
+        //display menu to choose what type to create, then create object, add to TicketList, and write to file
         static void CreateTickets() {
             string menuInput ="";
             while (menuInput != "0") {
@@ -79,22 +84,26 @@ namespace DotNetDbMidterm
                 switch (menuInput) {
                     case "1" : //create bug
                         Bug b = (Bug) CreateTicket("bug");
+                        logger.Info($"Bug ticket[{b.TicketID}] created!");
                         TicketList.bugs.Add(b);
                         FileWriter.WriteToFile(b.GetFileLineString(),"bug");
                         break;
                     case "2" : //create enhancement
                         Enhancement e = (Enhancement) CreateTicket("enhancement");
+                        logger.Info($"Enhancement ticket[{e.TicketID}] created!");
                         TicketList.enhancements.Add(e);
                         FileWriter.WriteToFile(e.GetFileLineString(),"enhancement");
                         break;
                     case "3" : //create task
                         Task t = (Task) CreateTicket("task");
+                        logger.Info($"Task ticket[{t.TicketID}] created!");
                         TicketList.tasks.Add(t);
                         FileWriter.WriteToFile(t.GetFileLineString(),"task");
                         break;
                 }
             }
         }
+        //Switch what type of ticket to create, get user input, return new ticket obj
         static Ticket CreateTicket(string type) {
             string[] args;
             switch (type) {
@@ -110,10 +119,13 @@ namespace DotNetDbMidterm
                 default : return null;
             }
         }
+        //loop through passed in ticket properties and get user input,
         static string[] GetTicketData(string[] props,string type) {
             string[] output = new string[props.Length];
             int nextID = TicketList.getNextTicketID(type);
             output[0] = nextID.ToString();
+            
+            //skip TicketID
             for(int i = 1; i < props.Length; i++) {
                 Ui.GetDetailPrompt(props[i]);
                 output[i] = Console.ReadLine();

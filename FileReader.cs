@@ -1,16 +1,16 @@
-using System;
 using System.IO;
 using System.Collections.Generic;
-using NLog.Web;
 namespace DotNetDbMidterm
 {
     static class FileReader
     {
+        //FileReader class reads ticket files, parses file lines, and creates ticket objects
         private const string bugsFile = "Tickets.csv";
         private const string enhancementsFile = "Enhancements.csv";
         private const string tasksFile ="Tasks.csv";
-        
         public static List<List<Ticket>> ReadAllFiles() {
+            Program.logger.Info("Begin read all files.");
+            //make multi dimensional out put array and dump tickets in from file
             List<List<Ticket>> output = new List<List<Ticket>>();
             output.Add(ReadFile("bugs"));
             output.Add(ReadFile("enhancements"));
@@ -18,33 +18,29 @@ namespace DotNetDbMidterm
             return output;
         }
         public static List<Ticket> ReadFile(string arg) {
-            // create instance of Logger
-            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
-            var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
             List<Ticket> output = new List<Ticket>();
             // assign fileName based on passed argument string
             string fileName = (arg == "bugs") ? bugsFile : (arg == "enhancements") ? enhancementsFile : (arg == "tasks") ? tasksFile : null;
             //add try catch... or put in Program.cs?
-            logger.Info($"Reading {fileName} started!");
+            Program.logger.Info($"Reading {fileName} started!");
             if(System.IO.File.Exists(fileName)) {
                 StreamReader sr = new StreamReader(fileName);
                 while(!sr.EndOfStream) {
                     string line = sr.ReadLine();
-                    logger.Info($"{line} added to output");
+                    Program.logger.Info($"{line} added to output");
                     output.Add(ParseLine(line,arg));
                 }
                 sr.Close();
             } else {
                 //file does not exist
+                Program.logger.Error($"File{fileName} does not exist!");
             }
             return output;
         }
         private static Ticket ParseLine(string line,string arg) {
             //obviously commas in any fields of the csv will fork this up royaly
             string[] lineItems = line.Split(",");
-            // Console.WriteLine(line);
-            // Console.WriteLine(arg);
-            // Console.WriteLine(lineItems[0]);
+            Program.logger.Info($"Begin Parsing {arg} type");
             switch (arg) {
                 case "bugs" :
                     //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching

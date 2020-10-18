@@ -1,10 +1,10 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
 namespace DotNetDbMidterm
 {
     static class TicketList
     {
+        //Static TicketList class
+        //holds created tickets in 3 lists, getNextTicketID gets highest TicketID+1
         public static List<Ticket> bugs = new List<Ticket>();
         public static List<Ticket> enhancements = new List<Ticket>();
         public static List<Ticket> tasks = new List<Ticket>();

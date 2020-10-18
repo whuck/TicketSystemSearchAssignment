@@ -2,6 +2,9 @@ namespace DotNetDbMidterm
 {
     class Ticket
     {
+        //Ticket Class, Parent of tickets
+        //overriden ToString for terminal output formatting
+        //virtual GetFileLineString for easy file writing
         public int TicketID {get;}
         private string Summary {get; set;}
         private string Status {get; set;}

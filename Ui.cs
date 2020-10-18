@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 namespace DotNetDbMidterm
 {
     static class Ui
     {
+        //Static Ui class
+        //handles most Console.WriteLines in program, mostly menu options
+        //has methods for outputting formatted ticket details
         public static void DisplayMenu(string arg) {
             switch(arg) {
                 case "title" : 
