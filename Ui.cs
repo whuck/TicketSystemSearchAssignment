@@ -1,5 +1,5 @@
 using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 namespace DotNetDbMidterm
 {
@@ -23,21 +23,30 @@ namespace DotNetDbMidterm
             }
 
         }
-        public static void DisplayTickets(ArrayList tickets, Boolean showAll) {
-            if(showAll) {
-                Console.WriteLine("Displaying All Tickets!:");
-                foreach (ArrayList ticketList in tickets) {
-                    DisplayTickets(ticketList,false);
-                }
-            } else {
+        public static void DisplayAllTickets(List<List<Ticket>> allTickets) {
+            Console.WriteLine("Displaying All Tickets");
+            DisplayTickets(allTickets[0],"bugs");
+            DisplayTickets(allTickets[1],"enhancements");
+            DisplayTickets(allTickets[2],"tasks");
+            DisplayTicketFooter();
+        }
+        public static void DisplayTickets(List<Ticket> tickets,string type) {
+                DisplayTicketHeader(type);
                 foreach (Ticket ticket in tickets) {
                     DisplayTicket(ticket);
                 }
-            }
+                DisplayTicketFooter();            
         }
         public static void DisplayTicket(Ticket t) {
             //Console.WriteLine("display ticket");
             Console.WriteLine(t.ToString());
+        }
+        public static void DisplayTicketHeader(string type) {
+            Console.WriteLine();
+            Console.WriteLine($"----------{type}----------");
+        }
+        public static void DisplayTicketFooter() {
+            Console.WriteLine();
         }
         private static void TitleScreen() {
             Console.WriteLine("Welcome to TicketFest! v2.0");

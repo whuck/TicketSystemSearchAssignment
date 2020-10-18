@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using System.Collections;
+using System.Collections.Generic;
 using NLog.Web;
 namespace DotNetDbMidterm
 {
@@ -10,18 +10,18 @@ namespace DotNetDbMidterm
         private const string enhancementsFile = "Enhancements.csv";
         private const string tasksFile ="Tasks.csv";
         
-        public static ArrayList ReadAllFiles() {
-            var output = new ArrayList();
+        public static List<List<Ticket>> ReadAllFiles() {
+            List<List<Ticket>> output = new List<List<Ticket>>();
             output.Add(ReadFile("bugs"));
             output.Add(ReadFile("enhancements"));
             output.Add(ReadFile("tasks"));
             return output;
         }
-        public static ArrayList ReadFile(string arg) {
+        public static List<Ticket> ReadFile(string arg) {
             // create instance of Logger
             string path = Directory.GetCurrentDirectory() + "\\nlog.config";
             var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
-            var output = new ArrayList();
+            List<Ticket> output = new List<Ticket>();
             // assign fileName based on passed argument string
             string fileName = (arg == "bugs") ? bugsFile : (arg == "enhancements") ? enhancementsFile : (arg == "tasks") ? tasksFile : null;
             //add try catch... or put in Program.cs?
