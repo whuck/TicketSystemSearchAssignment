@@ -15,9 +15,9 @@ namespace DotNetDbMidterm
             logger.Info("Program started");
             
             //example tickets
-            Bug hmm = new Bug(123,"summ","status","priority","submitter","assigned","watching","severity");
-            Enhancement hmm2 = new Enhancement(123,"summ","status","priority","submitter","assigned","watching","software","cost","reason","estimate");
-            Task hmm3 = new Task(123,"summ","status","priority","submitter","assigned","watching","projectName","duedate");
+            Bug hmm = new Bug("123","summ","status","priority","submitter","assigned","watching","severity");
+            Enhancement hmm2 = new Enhancement("123","summ","status","priority","submitter","assigned","watching","software","cost","reason","estimate");
+            Task hmm3 = new Task("123","summ","status","priority","submitter","assigned","watching","projectName","duedate");
 
             //display program title
             Ui.DisplayMenu("title");
@@ -47,15 +47,19 @@ namespace DotNetDbMidterm
                 switch (menuInput) {
                     case "1" : //display all
                         ticketList = FileReader.ReadAllFiles();
+                        Ui.DisplayTickets(ticketList,true);
                         break;
                     case "2" : //display bugs
                         ticketList = FileReader.ReadFile("bugs");
+                        Ui.DisplayTickets(ticketList,false);
                         break;
                     case "3" : //display enhancement
                         ticketList = FileReader.ReadFile("enhancements");
+                        Ui.DisplayTickets(ticketList, false);
                         break;
                     case "4" : //display task
                         ticketList = FileReader.ReadFile("tasks");
+                        Ui.DisplayTickets(ticketList,false);
                         break;
                     default : break;
                 }//switch

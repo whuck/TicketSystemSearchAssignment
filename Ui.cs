@@ -1,11 +1,11 @@
 using System;
+using System.Collections;
 using System.IO;
 namespace DotNetDbMidterm
 {
     static class Ui
     {
-        public static void DisplayMenu(string arg){
-            Console.WriteLine("What would you like to do?");
+        public static void DisplayMenu(string arg) {
             switch(arg) {
                 case "title" : 
                     TitleScreen();
@@ -23,8 +23,25 @@ namespace DotNetDbMidterm
             }
 
         }
+        public static void DisplayTickets(ArrayList tickets, Boolean showAll) {
+            if(showAll) {
+                Console.WriteLine("Displaying All Tickets!:");
+                foreach (ArrayList ticketList in tickets) {
+                    DisplayTickets(ticketList,false);
+                }
+            } else {
+                foreach (Ticket ticket in tickets) {
+                    DisplayTicket(ticket);
+                }
+            }
+        }
+        public static void DisplayTicket(Ticket t) {
+            //Console.WriteLine("display ticket");
+            Console.WriteLine(t.ToString());
+        }
         private static void TitleScreen() {
             Console.WriteLine("Welcome to TicketFest! v2.0");
+            Console.WriteLine("What would you like to do?");
         }
         private static void MainMenu() {
             Console.WriteLine("[1] Display Tickets");

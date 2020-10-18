@@ -11,8 +11,8 @@ namespace DotNetDbMidterm
         private string Assigned{get;}
         private string Watching{get;}
 
-        public Ticket(int ticketID, string summary, string status, string priority, string submitter, string assigned, string watching) {
-            this.TicketID = ticketID;
+        public Ticket(string ticketID, string summary, string status, string priority, string submitter, string assigned, string watching) {
+            this.TicketID = System.Int32.Parse(ticketID);
             this.Summary = summary;
             this.Status = status;
             this.Priority = priority;
