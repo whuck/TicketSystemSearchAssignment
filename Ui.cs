@@ -41,11 +41,27 @@ namespace DotNetDbMidterm
             //Console.WriteLine("display ticket");
             Console.WriteLine(t.ToString());
         }
-        public static void DisplayTicketHeader(string type) {
-            Console.WriteLine();
-            Console.WriteLine($"----------{type}----------");
+        private static void DisplayTicketHeader(string type) {
+            switch (type) {
+                case "bugs" :
+                    Console.WriteLine("------------------------------Bug Tickets--------------------------------------------------------------");
+                    Console.WriteLine($"{"TicketID",8}{"Summary",10}{"Status",7}{"Priority",9}{"Submitter",10}{"Assigned",9}{"Watching",20}{"Severity",9}");
+                    Console.WriteLine($"{"--------",8}{"---------",10}{"------",7}{"--------",9}{"---------",10}{"--------",9}{"-------------------",20}{"--------",9}");
+                    break;
+                case "enhancements" :
+                    Console.WriteLine("------------------------------Enhancement Tickets------------------------------------------------------");
+                    Console.WriteLine($"{"TicketID",8}{"Summary",10}{"Status",7}{"Priority",9}{"Submitter",10}{"Assigned",9}{"Watching",20}{"Software",9}{"Cost",5}{"Reason",7}{"Estimate",9}");
+                    Console.WriteLine($"{"--------",8}{"---------",10}{"------",7}{"--------",9}{"---------",10}{"--------",9}{"-------------------",20}{"--------",9}{"----",5}{"------",7}{"--------",9}");
+                    break;
+                case "tasks" :
+                    Console.WriteLine("------------------------------Task Tickets-------------------------------------------------------------");
+                    Console.WriteLine($"{"TicketID",8}{"Summary",10}{"Status",7}{"Priority",9}{"Submitter",10}{"Assigned",9}{"Watching",20}{"Project Name",13}{"DueDate",11}");
+                    Console.WriteLine($"{"--------",8}{"---------",10}{"------",7}{"--------",9}{"---------",10}{"--------",9}{"-------------------",20}{"------------",13}{"----------",11}");
+                    break;
+                default : break;
+            }
         }
-        public static void DisplayTicketFooter() {
+        private static void DisplayTicketFooter() {
             Console.WriteLine();
         }
         private static void TitleScreen() {

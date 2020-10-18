@@ -21,8 +21,8 @@ namespace DotNetDbMidterm
             this.Watching = watching;
         }
         public override string ToString() {
-            return TicketID.ToString() + Summary + Status + Priority + Submitter 
-            + Assigned + Watching;
+            return $"{this.TicketID,8}{this.Summary,10}{this.Status,7}{this.Priority,9}{this.Submitter,10}{this.Assigned,9}{this.Watching,20}";
+            //return TicketID + Summary + Status + Priority + Submitter       + Assigned + Watching;
         }
     }
 }

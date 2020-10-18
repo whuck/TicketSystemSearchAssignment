@@ -11,7 +11,7 @@ namespace DotNetDbMidterm
         }
         public override string ToString()
         {
-            return base.ToString() + Severity;
+            return $"{base.ToString()}{this.Severity,9}";
         }
     }
 }

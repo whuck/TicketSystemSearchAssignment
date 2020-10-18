@@ -13,7 +13,7 @@ namespace DotNetDbMidterm
 
         public override string ToString()
         {
-            return base.ToString() + ProjectName + DueDate;
+            return $"{base.ToString()}{this.ProjectName,13}{this.DueDate,11}";
         }
     }
 }

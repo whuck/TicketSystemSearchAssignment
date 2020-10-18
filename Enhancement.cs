@@ -16,7 +16,7 @@ namespace DotNetDbMidterm
         }
         public override string ToString()
         {
-            return base.ToString() + Software + Cost + Reason + Estimate;
+            return $"{base.ToString()}{this.Software,9}{this.Cost,5}{this.Reason,7}{this.Estimate,9}";
         }
     }
 }

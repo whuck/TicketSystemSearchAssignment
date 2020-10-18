@@ -317,3 +317,85 @@
 2020-10-17 22:01:16.6328|INFO|DotNetDbMidterm.FileReader|Reading Tasks.csv started!
 2020-10-17 22:01:16.6328|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
 2020-10-17 22:01:16.6554|INFO|DotNetDbMidterm.FileReader|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-17 22:14:57.2182|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:14:58.3901|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:14:58.3901|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:14:58.4036|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:17:58.4453|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:18:00.9813|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:18:00.9813|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:18:01.0012|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:22:35.5426|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:22:37.1844|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:22:37.1844|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:22:37.1970|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:28:23.9242|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:28:25.4858|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:28:25.4919|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:28:25.4919|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:28:45.0039|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:28:46.3588|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:28:46.3588|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:28:46.3816|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:29:26.5139|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:29:27.7146|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:29:27.7146|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:29:27.7312|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:30:13.7545|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:30:15.3378|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:30:15.3378|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:30:15.3378|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:30:56.9105|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:30:58.0147|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:30:58.0147|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:30:58.0300|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:31:11.2071|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:31:11.2217|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:31:11.2270|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:31:11.2270|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:31:11.2445|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:31:11.2445|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf software,cost,reason,estimate added to output
+2020-10-17 22:31:11.2585|INFO|DotNetDbMidterm.FileReader|Reading Tasks.csv started!
+2020-10-17 22:31:11.2585|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-17 22:31:11.2585|INFO|DotNetDbMidterm.FileReader|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-17 22:32:33.4344|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:32:34.6679|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:32:34.6679|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:32:34.6888|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:32:34.7003|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:32:34.7003|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:32:34.7188|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf software,cost,reason,estimate added to output
+2020-10-17 22:32:34.7303|INFO|DotNetDbMidterm.FileReader|Reading Tasks.csv started!
+2020-10-17 22:32:34.7303|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-17 22:32:34.7474|INFO|DotNetDbMidterm.FileReader|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-17 22:35:42.5010|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:35:45.4713|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:35:45.4773|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:35:45.4773|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:35:52.2912|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:35:52.2912|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:35:52.3107|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf software,cost,reason,estimate added to output
+2020-10-17 22:37:36.1264|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:37:37.6925|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:37:37.6985|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:37:37.6985|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:37:39.9887|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:37:40.0011|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:37:40.0076|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf software,cost,reason,estimate added to output
+2020-10-17 22:40:17.0787|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:40:19.8199|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:40:19.8261|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:40:19.8369|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:40:21.9942|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:40:22.0117|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:40:22.0117|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf,cost,reason,estimate added to output
+2020-10-17 22:43:11.0748|INFO|DotNetDbMidterm.Program|Program started
+2020-10-17 22:43:12.0802|INFO|DotNetDbMidterm.FileReader|Reading Tickets.csv started!
+2020-10-17 22:43:12.0881|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-17 22:43:12.0881|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-17 22:43:12.1051|INFO|DotNetDbMidterm.FileReader|Reading Enhancements.csv started!
+2020-10-17 22:43:12.1051|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-17 22:43:12.1180|INFO|DotNetDbMidterm.FileReader|123,asdf,asdf,asdf,asdf,asdf,asdf,asdf,cost,reason,estimate added to output
+2020-10-17 22:43:12.1180|INFO|DotNetDbMidterm.FileReader|Reading Tasks.csv started!
+2020-10-17 22:43:12.1356|INFO|DotNetDbMidterm.FileReader|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-17 22:43:12.1356|INFO|DotNetDbMidterm.FileReader|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
