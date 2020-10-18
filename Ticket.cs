@@ -3,13 +3,13 @@ namespace DotNetDbMidterm
     class Ticket
     {
         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching
-        private int TicketID {get;}
-        private string Summary{get;}
-        private string Status{get;}
-        private string Priority{get;}
-        private string Submitter{get;}
-        private string Assigned{get;}
-        private string Watching{get;}
+        public int TicketID {get;}
+        private string Summary {get; set;}
+        private string Status {get; set;}
+        private string Priority {get; set;}
+        private string Submitter {get; set;}
+        private string Assigned {get; set;}
+        private string Watching {get ;set;}
 
         public Ticket(string ticketID, string summary, string status, string priority, string submitter, string assigned, string watching) {
             this.TicketID = System.Int32.Parse(ticketID);

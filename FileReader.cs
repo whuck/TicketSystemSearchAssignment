@@ -46,10 +46,13 @@ namespace DotNetDbMidterm
             // Console.WriteLine(lineItems[0]);
             switch (arg) {
                 case "bugs" :
+                    //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching
                     return new Bug(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7]);
                 case "enhancements" :
+                    //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, Software, Cost, Reason, Estimate
                     return new Enhancement(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8],lineItems[9],lineItems[10]);
                 case "tasks" :
+                    //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, ProjectName, DueDate
                     return new Task(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8]);
                 default : return null;
             }
