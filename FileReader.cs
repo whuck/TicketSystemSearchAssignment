@@ -1,27 +1,44 @@
+using System;
 using System.IO;
+using System.Collections;
+using NLog.Web;
 namespace DotNetDbMidterm
 {
-    class FileReader
-    {//ripped from program.Main()
-    // /            string file = "Tickets.csv";
-                    //         //look for file if its not there create it
-                    // if(System.IO.File.Exists(file)) {
-                    //     StreamReader sr = new StreamReader(file);
-                    //     Console.WriteLine($"___________________________{file}____________________________________________________________");
-                    //     //grab file data line by line and display it
-                    //     while(!sr.EndOfStream) {
-                    //         string line = sr.ReadLine();
-                    //         Console.WriteLine(line);
-                    //     }
-                    //     sr.Close();
-                    //     Console.WriteLine("__________________________________________________________________________________________");
-                    // }
-                    // else { //create file
-                    //     Console.WriteLine("Ticket file not found, creating /Tickets.csv");
-                    //     StreamWriter sw = new StreamWriter(file);
-                    //     sw.WriteLine("0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2");
-                    //     sw.Close();
+    static class FileReader
+    {
+        private const string bugsFile = "Tickets.csv";
+        private const string enhancementsFile = "Enhancements.csv";
+        private const string tasksFile ="Tasks.csv";
+        
+        public static ArrayList ReadAllFiles() {
+            var output = new ArrayList();
+            output.Add(ReadFile("bugs"));
+            output.Add(ReadFile("enhancements"));
+            output.Add(ReadFile("tasks"));
+            return output;
+        }
+        public static ArrayList ReadFile(string arg) {
+            // create instance of Logger
+            string path = Directory.GetCurrentDirectory() + "\\nlog.config";
+            var logger = NLog.Web.NLogBuilder.ConfigureNLog(path).GetCurrentClassLogger();
+            
 
-                    // }
-    }
+            var output = new ArrayList();
+            string fileName = (arg == "bugs") ? bugsFile : (arg == "enhancements") ? enhancementsFile : (arg == "tasks") ? tasksFile : null;
+            //add try catch... or put in Program.cs?
+            logger.Info($"Reading {fileName} started!");
+            if(System.IO.File.Exists(fileName)) {
+                StreamReader sr = new StreamReader(fileName);
+                while(!sr.EndOfStream) {
+                    string line = sr.ReadLine();
+                    logger.Info($"{line} added to output");
+                    output.Add(line);
+                }
+                sr.Close();
+            } else {
+                //file does not exist
+            }
+            return output;
+        }
+    }//class
 }

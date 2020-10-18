@@ -38,7 +38,7 @@ namespace DotNetDbMidterm
             Console.WriteLine("[4] Display Task Tickets");
             Console.WriteLine("[0] Back to Main Menu");
         }
-            private static void CreateMenu() {
+        private static void CreateMenu() {
             Console.WriteLine("[1] Create New Bug Ticket");
             Console.WriteLine("[2] Create New Enhancement Ticket");
             Console.WriteLine("[3] Create New Task Ticket");

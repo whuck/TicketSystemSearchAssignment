@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections;
 using NLog.Web;
 
 namespace DotNetDbMidterm
@@ -28,10 +29,10 @@ namespace DotNetDbMidterm
                 menuInput = Console.ReadLine();
                 switch (menuInput) {
                     case "1" :
-                        DisplayTickets(); //loops until quit is selected
+                        DisplayTickets(); //loops until back to main menu is selected
                         break;
                     case "2" :
-                        CreateTickets(); //loops until quit is selected
+                        CreateTickets(); //loops until  back to main menu is selected
                         break;
                     default : break;
                 }//switch
@@ -42,14 +43,19 @@ namespace DotNetDbMidterm
             while (menuInput != "0") {
                 Ui.DisplayMenu("display");
                 menuInput = Console.ReadLine();
+                ArrayList ticketList = new ArrayList();
                 switch (menuInput) {
                     case "1" : //display all
+                        ticketList = FileReader.ReadAllFiles();
                         break;
                     case "2" : //display bugs
+                        ticketList = FileReader.ReadFile("bugs");
                         break;
                     case "3" : //display enhancement
+                        ticketList = FileReader.ReadFile("enhancements");
                         break;
                     case "4" : //display task
+                        ticketList = FileReader.ReadFile("tasks");
                         break;
                     default : break;
                 }//switch

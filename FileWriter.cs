@@ -2,6 +2,12 @@ namespace DotNetDbMidterm
 {
     class FileWriter
     { //ripped from Program.Main()
+
+                        // else { //create file
+                    //     Console.WriteLine("Ticket file not found, creating /Tickets.csv");
+                    //     StreamWriter sw = new StreamWriter(file);
+                    //     sw.WriteLine("0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2");
+                    //     sw.Close();
     //            string file = "Tickets.csv";
                 //         else if(menuInput =="2"){
                 //     //ask for each ticket field then smush em together and write to file
