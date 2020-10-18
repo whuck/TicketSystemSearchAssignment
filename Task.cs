@@ -15,5 +15,16 @@ namespace DotNetDbMidterm
         {
             return $"{base.ToString()}{this.ProjectName,13}{this.DueDate,11}";
         }
+        // public override string[] GetProps() {
+        //     string[] baseProps = base.GetProps();
+        //     string[] taskProps = {"Project Name","Due Date"};
+        //     string[] output = new string[baseProps.Length + taskProps.Length];
+        //     baseProps.CopyTo(output,0);
+        //     taskProps.CopyTo(output,baseProps.Length);
+        //     return output;
+        // }
+        public override string GetFileLineString() {
+            return base.GetFileLineString()+$",{this.ProjectName},{this.DueDate}";
+        }
     }
 }

@@ -1,7 +1,23 @@
+using System.IO;
 namespace DotNetDbMidterm
 {
-    class FileWriter
-    { //ripped from Program.Main()
+    static class FileWriter
+    {
+        private const string bugsFile = "Tickets.csv";
+        private const string enhancementsFile = "Enhancements.csv";
+        private const string tasksFile ="Tasks.csv";
+
+        public static void WriteToFile(string ticketLine, string type) {
+            string file = (type == "bug") ? bugsFile : (type == "enhancement") ? enhancementsFile : (type == "task") ? tasksFile : null;
+            if (System.IO.File.Exists(file)) {
+                StreamWriter sw = new StreamWriter(file, append: true);
+                sw.WriteLine(ticketLine);
+                sw.Close();
+            } else {
+                //exception
+            }
+        }
+         //ripped from Program.Main()
 
                         // else { //create file
                     //     Console.WriteLine("Ticket file not found, creating /Tickets.csv");

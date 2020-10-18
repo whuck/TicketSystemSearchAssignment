@@ -86,9 +86,8 @@ namespace DotNetDbMidterm
             Console.WriteLine("[3] Create New Task Ticket");
             Console.WriteLine("[0] Back to Main Menu");
         }
-        public static string GetDetail(string prop) {
-            Console.WriteLine($"Enter the {prop}:");
-            return Console.ReadLine();
+        public static void GetDetailPrompt(string prop) {
+            Console.WriteLine($"Enter the {prop}: [NO COMMAS]");
         }
 
     }

@@ -93,33 +93,71 @@ namespace DotNetDbMidterm
                 menuInput = Console.ReadLine();
                 switch (menuInput) {
                     case "1" : //create bug
-                        CreateTicket("bug");
+                        Bug b = (Bug) CreateTicket("bug");
+                        //TicketList.bugs.Add(CreateTicket("bug"));
+                        TicketList.bugs.Add(b);
+                        FileWriter.WriteToFile(b.GetFileLineString(),"bug");
                         break;
                     case "2" : //create enhancement
-                        CreateTicket("enhancement");
+                        Enhancement e = (Enhancement) CreateTicket("enhancement");
+                        //TicketList.enhancements.Add(CreateTicket("enhancement"));
+                        TicketList.enhancements.Add(e);
+                        FileWriter.WriteToFile(e.GetFileLineString(),"enhancement");
+                        //CreateTicket("enhancement");
                         break;
                     case "3" : //create task
-                        CreateTicket("task");
+                        Task t = (Task) CreateTicket("task");
+                        TicketList.tasks.Add(t);
+                        FileWriter.WriteToFile(t.GetFileLineString(),"task");
+                        //TicketList.tasks.Add(CreateTicket("task"));
+                        //CreateTicket("task");
                         break;
                 }//switch
             }//while
         }//CreateTickets()
+            //         switch (arg) {
+            //     case "bugs" :
+            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching
+            //         return new Bug(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7]);
+            //     case "enhancements" :
+            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, Software, Cost, Reason, Estimate
+            //         return new Enhancement(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8],lineItems[9],lineItems[10]);
+            //     case "tasks" :
+            //         //TicketID, Summary, Status, Priority, Submitter, Assigned, Watching1|Watching2, ProjectName, DueDate
+            //         return new Task(lineItems[0],lineItems[1],lineItems[2],lineItems[3],lineItems[4],lineItems[5],lineItems[6],lineItems[7],lineItems[8]);
+            //     default : return null;
+            // }
         static Ticket CreateTicket(string type) {
+            string[] args;
             switch (type) {
                 case "bug" : 
-                    GetTicketData(typeof(Bug).GetProperties());
-                    return null;
+                    args = GetTicketData(new string[]{"","Summary","Status","Priority","Submitter","Assigned","Watching","Severity"},"bugs");
+                    return new Bug(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7]);
                 case "enhancement" :
-                   return null;
+                    args = GetTicketData(new string[]{"","Summary","Status","Priority","Submitter","Assigned","Watching","Software", "Cost", "Reason", "Estimate"},"enhancements");
+                    return new Enhancement(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8],args[9],args[10]);
                 case "task" :
-                return null;
+                    args = GetTicketData(new string[]{"","Summary","Status","Priority","Submitter","Assigned","Watching","ProjectName","DueDate"},"tasks");
+                    return new Task(args[0],args[1],args[2],args[3],args[4],args[5],args[6],args[7],args[8]);
                 default : return null;
             }
         }
-        static void GetTicketData(PropertyInfo[] props) {
-            foreach(var p in props) {
-                Ui.GetDetail(p.Name);
+        static string[] GetTicketData(string[] props,string type) {
+            string[] output = new string[props.Length];
+            // foreach(var p in props) {
+            //     Ui.GetDetailPrompt(p);
+            // }
+            // int nextID = (type == "bugs") ? TicketList.getNextTicketID("bugs") : 
+            //     (type == "enhancements") ? TicketList.getNextTicketID("bugs") : 
+            //     (type == "tasks") ? TicketList.getNextTicketID("bugs") : 0;
+            int nextID = TicketList.getNextTicketID(type);
+            //string fileName = (arg == "bugs") ? bugsFile : (arg == "enhancements") ? enhancementsFile : (arg == "tasks") ? tasksFile : null;
+            output[0] = nextID.ToString();
+            for(int i = 1; i < props.Length; i++) {
+                Ui.GetDetailPrompt(props[i]);
+                output[i] = Console.ReadLine();
             }
+            return output;
         }
     }//class
 }//namespace

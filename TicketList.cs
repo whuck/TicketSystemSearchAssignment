@@ -8,11 +8,11 @@ namespace DotNetDbMidterm
         public static List<Ticket> bugs = new List<Ticket>();
         public static List<Ticket> enhancements = new List<Ticket>();
         public static List<Ticket> tasks = new List<Ticket>();
-        static TicketList() {
-            bugs = new List<Ticket>();
-            enhancements = new List<Ticket>();
-            tasks = new List<Ticket>();
-        }
+        // static TicketList() {
+        //     bugs = new List<Ticket>();
+        //     enhancements = new List<Ticket>();
+        //     tasks = new List<Ticket>();
+        // }
         public static int getNextTicketID(string whichList) {
             int newID = 0;
             switch (whichList) {

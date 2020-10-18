@@ -19,10 +19,17 @@ namespace DotNetDbMidterm
             this.Submitter = submitter;
             this.Assigned = assigned;
             this.Watching = watching;
+            
         }
         public override string ToString() {
             return $"{this.TicketID,8}{this.Summary,10}{this.Status,7}{this.Priority,9}{this.Submitter,10}{this.Assigned,9}{this.Watching,20}";
             //return TicketID + Summary + Status + Priority + Submitter       + Assigned + Watching;
+        }
+        // public virtual string[] GetProps() {
+        //     return new string[]{"Summary","Status","Priority","Submitter","Assigned","Watching"};
+        // }
+        public virtual string GetFileLineString() {
+            return $"{this.TicketID},{this.Summary},{this.Status},{this.Priority},{this.Submitter},{this.Assigned},{this.Watching}";
         }
     }
 }

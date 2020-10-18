@@ -40,6 +40,7 @@ namespace DotNetDbMidterm
             return output;
         }
         private static Ticket ParseLine(string line,string arg) {
+            //obviously commas in any fields of the csv will fork this up royaly
             string[] lineItems = line.Split(",");
             // Console.WriteLine(line);
             // Console.WriteLine(arg);

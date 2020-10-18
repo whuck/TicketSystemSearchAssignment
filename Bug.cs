@@ -13,5 +13,17 @@ namespace DotNetDbMidterm
         {
             return $"{base.ToString()}{this.Severity,9}";
         }
+        // public override string[] GetProps() {
+        //     string[] baseProps = base.GetProps();
+        //     string[] bugProps = {"Severity"};
+        //     string[] output = new string[baseProps.Length + bugProps.Length];
+        //     baseProps.CopyTo(output,0);
+        //     bugProps.CopyTo(output,baseProps.Length);
+        //     return output;
+        // }
+        public override string GetFileLineString() {
+            return base.GetFileLineString()+$",{this.Severity}";
+        }
     }
+    
 }
