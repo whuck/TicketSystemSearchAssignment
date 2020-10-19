@@ -562,3 +562,334 @@
 2020-10-18 14:07:24.1645|INFO|DotNetDbMidterm.FileReader|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
 2020-10-18 14:07:24.1800|INFO|DotNetDbMidterm.FileReader|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
 2020-10-18 14:07:24.1800|INFO|DotNetDbMidterm.Program|3 task tickets added! next id = 3
+2020-10-18 16:51:52.8677|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 16:51:52.9094|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 16:51:52.9190|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-18 16:51:52.9378|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 16:51:52.9535|INFO|DotNetDbMidterm.Program|4,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-18 16:51:52.9655|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 16:51:52.9655|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 16:51:52.9923|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 16:51:53.0186|INFO|DotNetDbMidterm.Program|3 bug tickets added! next id = 6
+2020-10-18 16:51:53.0321|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 16:51:53.0321|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-18 16:51:53.0539|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 16:51:53.0601|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,cost,reason,estimate added to output
+2020-10-18 16:51:53.0780|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 16:51:53.0968|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 16:51:53.1024|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 16:51:53.1182|INFO|DotNetDbMidterm.Program|3 enhancement tickets added! next id = 14
+2020-10-18 16:51:53.1182|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 16:51:53.1389|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-18 16:51:53.1389|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 16:51:53.1649|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 16:51:53.1852|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 16:51:53.2074|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 16:51:53.2231|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 16:51:53.2294|INFO|DotNetDbMidterm.Program|3 task tickets added! next id = 3
+2020-10-18 16:53:15.6080|INFO|DotNetDbMidterm.Program|Bug ticket[6] created!
+2020-10-18 16:53:15.6080|INFO|DotNetDbMidterm.Program|Writing bug:6,hmm,close,0,they,him,xir|xe|me,NA to file
+2020-10-18 16:53:15.6350|INFO|DotNetDbMidterm.Program|bug wrote to file!
+2020-10-18 16:54:16.8602|INFO|DotNetDbMidterm.Program|Enhancement ticket[14] created!
+2020-10-18 16:54:16.8684|INFO|DotNetDbMidterm.Program|Writing enhancement:14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 to file
+2020-10-18 16:54:16.8852|INFO|DotNetDbMidterm.Program|enhancement wrote to file!
+2020-10-18 16:55:02.3902|INFO|DotNetDbMidterm.Program|Task ticket[3] created!
+2020-10-18 16:55:02.3984|INFO|DotNetDbMidterm.Program|Writing task:3,oldtask,open,med,dude,duderino,hisdudeness,oldtaskIGNORE,10/31/2020 to file
+2020-10-18 16:55:02.4145|INFO|DotNetDbMidterm.Program|task wrote to file!
+2020-10-18 17:08:32.4888|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 17:54:47.1697|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 17:54:47.2010|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 17:54:47.2010|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-18 17:54:47.2226|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 17:54:47.2392|INFO|DotNetDbMidterm.Program|4,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-18 17:54:47.2499|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 17:54:47.2624|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 17:54:47.2624|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 17:54:47.2746|INFO|DotNetDbMidterm.Program|6,hmm,close,0,they,him,xir|xe|me,NA added to output
+2020-10-18 17:54:47.2746|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 17:54:47.3012|INFO|DotNetDbMidterm.Program|4 bug tickets added! next id = 7
+2020-10-18 17:54:47.3148|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 17:54:47.3289|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-18 17:54:47.3289|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 17:54:47.3517|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,cost,reason,estimate added to output
+2020-10-18 17:54:47.3517|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 17:54:47.3716|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 17:54:47.3716|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 17:54:47.3931|INFO|DotNetDbMidterm.Program|14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 added to output
+2020-10-18 17:54:47.3987|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 17:54:47.4148|INFO|DotNetDbMidterm.Program|4 enhancement tickets added! next id = 15
+2020-10-18 17:54:47.4148|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 17:54:47.4395|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-18 17:54:47.4588|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 17:54:47.4770|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 17:54:47.4770|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 17:54:47.4993|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 17:54:47.4993|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 17:54:47.5195|INFO|DotNetDbMidterm.Program|3,oldtask,open,med,dude,duderino,hisdudeness,oldtaskIGNORE,10/31/2020 added to output
+2020-10-18 17:54:47.5343|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 17:54:47.5549|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
+2020-10-18 17:54:58.2583|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 17:57:40.5850|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 17:57:40.6167|INFO|DotNetDbMidterm.Program|Reading Ticket1s.csv started!
+2020-10-18 17:57:40.6167|ERROR|DotNetDbMidterm.Program|FileTicket1s.csv does not exist!
+2020-10-18 17:58:27.8566|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 17:58:27.8875|INFO|DotNetDbMidterm.Program|Reading Ticket1s.csv started!
+2020-10-18 17:58:27.8875|ERROR|DotNetDbMidterm.Program|FileTicket1s.csv does not exist!
+2020-10-18 18:03:52.5760|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:03:52.6048|INFO|DotNetDbMidterm.Program|Reading Ticket1s.csv started!
+2020-10-18 18:03:52.6048|ERROR|DotNetDbMidterm.Program|File Ticket1s.csv does not exist!
+2020-10-18 18:04:36.1090|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:04:36.1388|INFO|DotNetDbMidterm.Program|Reading Ticket1s.csv started!
+2020-10-18 18:04:36.1388|ERROR|DotNetDbMidterm.Program|File Ticket1s.csv does not exist!
+2020-10-18 18:04:36.1741|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:04:36.1880|INFO|DotNetDbMidterm.Program|0 bug tickets added! next id = 1
+2020-10-18 18:04:36.1880|INFO|DotNetDbMidterm.Program|Reading Enhancem1ents.csv started!
+2020-10-18 18:04:36.2114|ERROR|DotNetDbMidterm.Program|File Enhancem1ents.csv does not exist!
+2020-10-18 18:04:36.2114|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 18:04:36.2315|INFO|DotNetDbMidterm.Program|0 enhancement tickets added! next id = 1
+2020-10-18 18:04:36.2315|INFO|DotNetDbMidterm.Program|Reading Ta1sks.csv started!
+2020-10-18 18:04:36.2526|ERROR|DotNetDbMidterm.Program|File Ta1sks.csv does not exist!
+2020-10-18 18:04:36.2708|INFO|DotNetDbMidterm.Program|tasks file created!
+2020-10-18 18:04:36.2799|INFO|DotNetDbMidterm.Program|0 task tickets added! next id = 1
+2020-10-18 18:04:55.8240|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 18:05:16.2732|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:05:16.3025|INFO|DotNetDbMidterm.Program|Reading Ticket1s.csv started!
+2020-10-18 18:05:16.3083|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:05:16.3217|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 18:05:16.3217|INFO|DotNetDbMidterm.Program|1 bug tickets added! next id = 2
+2020-10-18 18:05:16.3470|INFO|DotNetDbMidterm.Program|Reading Enhancem1ents.csv started!
+2020-10-18 18:05:16.3526|INFO|DotNetDbMidterm.Program|1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 18:05:16.3526|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 18:05:16.3780|INFO|DotNetDbMidterm.Program|1 enhancement tickets added! next id = 2
+2020-10-18 18:05:16.3831|INFO|DotNetDbMidterm.Program|Reading Ta1sks.csv started!
+2020-10-18 18:05:16.3831|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 18:05:16.3997|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 18:05:16.3997|INFO|DotNetDbMidterm.Program|1 task tickets added! next id = 2
+2020-10-18 18:05:20.3465|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 18:27:24.3913|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:27:24.4256|INFO|DotNetDbMidterm.Program|Reading Tickeght1s.csv started!
+2020-10-18 18:27:24.4333|ERROR|DotNetDbMidterm.Program|File Tickeght1s.csv does not exist!
+2020-10-18 18:33:21.8897|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:33:21.9237|INFO|DotNetDbMidterm.Program|Reading Tickeght1s.csv started!
+2020-10-18 18:33:21.9304|ERROR|DotNetDbMidterm.Program|File Tickeght1s.csv does not exist!
+2020-10-18 18:33:21.9304|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:33:21.9566|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:33:53.5795|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:33:53.6120|INFO|DotNetDbMidterm.Program|Reading Ticasdfkeght1s.csv started!
+2020-10-18 18:33:53.6194|ERROR|DotNetDbMidterm.Program|File Ticasdfkeght1s.csv does not exist!
+2020-10-18 18:33:53.6398|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:33:53.6559|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:35:19.8378|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:35:19.8718|INFO|DotNetDbMidterm.Program|Reading Ticasdfkeght1s.csv started!
+2020-10-18 18:35:19.8718|ERROR|DotNetDbMidterm.Program|File Ticasdfkeght1s.csv does not exist!
+2020-10-18 18:35:19.9017|INFO|DotNetDbMidterm.Program|Writing bugs: to file
+2020-10-18 18:35:19.9180|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:37:16.0842|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:37:16.1242|INFO|DotNetDbMidterm.Program|Reading Ticasdfkeght1s.csv started!
+2020-10-18 18:37:16.1329|ERROR|DotNetDbMidterm.Program|File Ticasdfkeght1s.csv does not exist!
+2020-10-18 18:37:16.1560|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:37:16.1681|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:37:16.1837|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:37:16.1978|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:37:16.2205|INFO|DotNetDbMidterm.Program|Reading Enhancasdfem1ents.csv started!
+2020-10-18 18:37:16.2385|ERROR|DotNetDbMidterm.Program|File Enhancasdfem1ents.csv does not exist!
+2020-10-18 18:39:21.4612|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:39:21.4945|INFO|DotNetDbMidterm.Program|Reading Ticasdfkeght1s.csv started!
+2020-10-18 18:39:21.4945|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:39:21.5245|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 18:39:21.5407|INFO|DotNetDbMidterm.Program|1 bug tickets added! next id = 2
+2020-10-18 18:39:21.5407|INFO|DotNetDbMidterm.Program|Reading Enhancasdfem1ents.csv started!
+2020-10-18 18:39:21.5542|ERROR|DotNetDbMidterm.Program|File Enhancasdfem1ents.csv does not exist!
+2020-10-18 18:39:21.5542|INFO|DotNetDbMidterm.Program|Writing enhancements:1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 to file
+2020-10-18 18:39:21.5828|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:39:21.6118|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:39:21.6347|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 18:39:21.6576|INFO|DotNetDbMidterm.Program|Reading Taasdf1sks.csv started!
+2020-10-18 18:39:21.6716|ERROR|DotNetDbMidterm.Program|File Taasdf1sks.csv does not exist!
+2020-10-18 18:39:21.6716|INFO|DotNetDbMidterm.Program|Writing tasks:1,test task,open,high,me,they,him|her,test project,12/25/2020 to file
+2020-10-18 18:39:21.6940|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:39:21.7163|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:39:21.7354|INFO|DotNetDbMidterm.Program|tasks file created!
+2020-10-18 18:45:50.8062|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:45:50.8343|INFO|DotNetDbMidterm.Program|Reading T.csv started!
+2020-10-18 18:45:50.8398|ERROR|DotNetDbMidterm.Program|File T.csv does not exist!
+2020-10-18 18:45:50.8550|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:45:50.8697|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:45:50.8838|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:45:50.8838|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:51:12.2582|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:51:12.2872|INFO|DotNetDbMidterm.Program|Reading T1.csv started!
+2020-10-18 18:51:12.2932|ERROR|DotNetDbMidterm.Program|File T1.csv does not exist!
+2020-10-18 18:51:12.3049|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:51:12.3049|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:51:12.3254|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:51:12.3368|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:51:12.3512|INFO|DotNetDbMidterm.Program|Reading T1.csv started!
+2020-10-18 18:51:12.3512|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:51:12.3798|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 18:51:12.3876|INFO|DotNetDbMidterm.Program|Reading E1.csv started!
+2020-10-18 18:51:12.4016|ERROR|DotNetDbMidterm.Program|File E1.csv does not exist!
+2020-10-18 18:51:12.4153|INFO|DotNetDbMidterm.Program|Writing enhancements:1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 to file
+2020-10-18 18:51:12.4297|ERROR|DotNetDbMidterm.Program|WriteTo file does not exist!
+2020-10-18 18:51:12.4297|INFO|DotNetDbMidterm.Program|${type} file created!
+2020-10-18 18:51:12.4513|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 18:51:12.4629|INFO|DotNetDbMidterm.Program|Reading E1.csv started!
+2020-10-18 18:51:12.4629|INFO|DotNetDbMidterm.Program|1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 18:51:12.4796|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 18:51:12.4796|INFO|DotNetDbMidterm.Program|Reading T1.csv started!
+2020-10-18 18:51:12.4937|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:51:12.4937|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 18:54:01.6933|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 18:54:01.7241|INFO|DotNetDbMidterm.Program|Reading T2.csv started!
+2020-10-18 18:54:01.7304|ERROR|DotNetDbMidterm.Program|File T2.csv does not exist!
+2020-10-18 18:54:01.7428|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 18:54:01.7428|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:54:01.7640|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 18:54:01.7780|INFO|DotNetDbMidterm.Program|Reading T2.csv started!
+2020-10-18 18:54:01.7780|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:54:01.8012|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 18:54:01.8070|INFO|DotNetDbMidterm.Program|Reading E2.csv started!
+2020-10-18 18:54:01.8070|ERROR|DotNetDbMidterm.Program|File E2.csv does not exist!
+2020-10-18 18:54:01.8316|INFO|DotNetDbMidterm.Program|Writing enhancements:1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 to file
+2020-10-18 18:54:01.8457|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 18:54:01.8607|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 18:54:01.8743|INFO|DotNetDbMidterm.Program|Reading E2.csv started!
+2020-10-18 18:54:01.8743|INFO|DotNetDbMidterm.Program|1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 18:54:01.8945|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 18:54:01.9094|INFO|DotNetDbMidterm.Program|Reading T2.csv started!
+2020-10-18 18:54:01.9149|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 18:54:01.9149|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:00:41.4440|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:00:41.4731|INFO|DotNetDbMidterm.Program|Reading T2.csv started!
+2020-10-18 19:00:41.4787|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:00:41.4787|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:00:41.5036|INFO|DotNetDbMidterm.Program|1 bug tickets added! next id = 2
+2020-10-18 19:00:41.5142|INFO|DotNetDbMidterm.Program|Reading E2.csv started!
+2020-10-18 19:00:41.5248|INFO|DotNetDbMidterm.Program|1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:00:41.5248|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:00:41.5248|INFO|DotNetDbMidterm.Program|1 enhancement tickets added! next id = 2
+2020-10-18 19:00:41.5439|INFO|DotNetDbMidterm.Program|Reading T2.csv started!
+2020-10-18 19:00:41.5439|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:00:41.5696|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:01:28.5598|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:01:28.5875|INFO|DotNetDbMidterm.Program|Reading B3.csv started!
+2020-10-18 19:01:28.5875|ERROR|DotNetDbMidterm.Program|File B3.csv does not exist!
+2020-10-18 19:01:28.6071|INFO|DotNetDbMidterm.Program|Writing bugs:1,help!,open,2,me,they,he|him,HIGH to file
+2020-10-18 19:01:28.6186|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 19:01:28.6186|INFO|DotNetDbMidterm.Program|bugs file created!
+2020-10-18 19:01:28.6426|INFO|DotNetDbMidterm.Program|Reading B3.csv started!
+2020-10-18 19:01:28.6489|INFO|DotNetDbMidterm.Program|1,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:01:28.6489|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:01:28.6648|INFO|DotNetDbMidterm.Program|Reading E3.csv started!
+2020-10-18 19:01:28.6648|ERROR|DotNetDbMidterm.Program|File E3.csv does not exist!
+2020-10-18 19:01:28.6832|INFO|DotNetDbMidterm.Program|Writing enhancements:1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 to file
+2020-10-18 19:01:28.6832|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 19:01:28.7065|INFO|DotNetDbMidterm.Program|enhancements file created!
+2020-10-18 19:01:28.7133|INFO|DotNetDbMidterm.Program|Reading E3.csv started!
+2020-10-18 19:01:28.7133|INFO|DotNetDbMidterm.Program|1,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:01:28.7282|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:01:28.7282|INFO|DotNetDbMidterm.Program|Reading T3.csv started!
+2020-10-18 19:01:28.7455|ERROR|DotNetDbMidterm.Program|File T3.csv does not exist!
+2020-10-18 19:01:28.7455|INFO|DotNetDbMidterm.Program|Writing tasks:1,test task,open,high,me,they,him|her,test project,12/25/2020 to file
+2020-10-18 19:01:28.7601|INFO|DotNetDbMidterm.Program|tasks file created!
+2020-10-18 19:01:28.7601|INFO|DotNetDbMidterm.Program|tasks file created!
+2020-10-18 19:01:28.7735|INFO|DotNetDbMidterm.Program|Reading T3.csv started!
+2020-10-18 19:01:28.7735|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 19:01:28.7735|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:02:26.8639|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 19:02:30.5737|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:02:30.6009|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 19:02:30.6068|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-18 19:02:30.6068|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:02:30.6221|INFO|DotNetDbMidterm.Program|4,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-18 19:02:30.6221|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:02:30.6399|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:02:30.6399|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:02:30.6551|INFO|DotNetDbMidterm.Program|6,hmm,close,0,they,him,xir|xe|me,NA added to output
+2020-10-18 19:02:30.6551|INFO|DotNetDbMidterm.Program|Begin Parsing bugs type
+2020-10-18 19:02:30.6678|INFO|DotNetDbMidterm.Program|4 bug tickets added! next id = 7
+2020-10-18 19:02:30.6678|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 19:02:30.6822|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Software,Cost,Reason,Estimate added to output
+2020-10-18 19:02:30.6822|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:02:30.7026|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,cost,reason,estimate added to output
+2020-10-18 19:02:30.7026|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:02:30.7140|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:02:30.7140|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:02:30.7388|INFO|DotNetDbMidterm.Program|14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 added to output
+2020-10-18 19:02:30.7535|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements type
+2020-10-18 19:02:30.7669|INFO|DotNetDbMidterm.Program|4 enhancement tickets added! next id = 15
+2020-10-18 19:02:30.7737|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 19:02:30.7896|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-18 19:02:30.7896|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:02:30.8162|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 19:02:30.8310|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:02:30.8377|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 19:02:30.8519|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:02:30.8519|INFO|DotNetDbMidterm.Program|3,oldtask,open,med,dude,duderino,hisdudeness,oldtaskIGNORE,10/31/2020 added to output
+2020-10-18 19:02:30.8797|INFO|DotNetDbMidterm.Program|Begin Parsing tasks type
+2020-10-18 19:02:30.8939|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
+2020-10-18 19:12:27.1496|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 19:12:29.7886|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:12:29.8157|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 19:12:29.8225|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity added to output
+2020-10-18 19:12:29.8225|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,Severity
+2020-10-18 19:12:29.8225|INFO|DotNetDbMidterm.Program|4,asdf,asdf,asdf,asdf,asdf,asdf,Extreme added to output
+2020-10-18 19:12:29.8407|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:4,asdf,asdf,asdf,asdf,asdf,asdf,Extreme
+2020-10-18 19:12:29.8407|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:12:29.8557|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:5,help!,open,2,me,they,he|him,HIGH
+2020-10-18 19:12:29.8557|INFO|DotNetDbMidterm.Program|6,hmm,close,0,they,him,xir|xe|me,NA added to output
+2020-10-18 19:12:29.8704|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:6,hmm,close,0,they,him,xir|xe|me,NA
+2020-10-18 19:12:29.8704|INFO|DotNetDbMidterm.Program|4 bug tickets added! next id = 7
+2020-10-18 19:12:29.8843|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 19:12:29.8843|INFO|DotNetDbMidterm.Program|0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75 added to output
+2020-10-18 19:12:29.8994|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75
+2020-10-18 19:12:29.8994|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50 added to output
+2020-10-18 19:12:29.8994|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50
+2020-10-18 19:12:29.9333|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:12:29.9333|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12
+2020-10-18 19:12:29.9546|INFO|DotNetDbMidterm.Program|14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 added to output
+2020-10-18 19:12:29.9546|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00
+2020-10-18 19:12:29.9739|INFO|DotNetDbMidterm.Program|4 enhancement tickets added! next id = 15
+2020-10-18 19:12:29.9931|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 19:12:30.0116|INFO|DotNetDbMidterm.Program|0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate added to output
+2020-10-18 19:12:30.0309|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:0,Summary,Status,Priority,Submitter,Assigned,Watching1|Watching2,ProjectName,DueDate
+2020-10-18 19:12:30.0309|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 19:12:30.0523|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:1,test task,open,high,me,they,him|her,test project,12/25/2020
+2020-10-18 19:12:30.0721|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 19:12:30.0721|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020
+2020-10-18 19:12:30.0980|INFO|DotNetDbMidterm.Program|3,oldtask,open,med,dude,duderino,hisdudenes,oldtaskIGNORE,10/31/2020 added to output
+2020-10-18 19:12:30.1039|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:3,oldtask,open,med,dude,duderino,hisdudenes,oldtaskIGNORE,10/31/2020
+2020-10-18 19:12:30.1186|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
+2020-10-18 19:15:37.7476|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 19:15:40.3771|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:15:40.4055|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 19:15:40.4055|INFO|DotNetDbMidterm.Program|0,first!,open,ultra,they,you,someone,med added to output
+2020-10-18 19:15:40.4168|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:0,first!,open,ultra,they,you,someone,med
+2020-10-18 19:15:40.4168|INFO|DotNetDbMidterm.Program|4,HHelp,open,4,him,them,you,Extreme added to output
+2020-10-18 19:15:40.4305|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:4,HHelp,open,4,him,them,you,Extreme
+2020-10-18 19:15:40.4305|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:15:40.4305|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:5,help!,open,2,me,they,he|him,HIGH
+2020-10-18 19:15:40.4521|INFO|DotNetDbMidterm.Program|6,hmm,close,0,they,him,xir|xe|me,NA added to output
+2020-10-18 19:15:40.4521|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:6,hmm,close,0,they,him,xir|xe|me,NA
+2020-10-18 19:15:40.4691|INFO|DotNetDbMidterm.Program|4 bug tickets added! next id = 7
+2020-10-18 19:15:40.4763|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 19:15:40.4763|INFO|DotNetDbMidterm.Program|0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75 added to output
+2020-10-18 19:15:40.4963|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75
+2020-10-18 19:15:40.4963|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50 added to output
+2020-10-18 19:15:40.5095|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50
+2020-10-18 19:15:40.5095|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:15:40.5246|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12
+2020-10-18 19:15:40.5246|INFO|DotNetDbMidterm.Program|14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 added to output
+2020-10-18 19:15:40.5430|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00
+2020-10-18 19:15:40.5430|INFO|DotNetDbMidterm.Program|4 enhancement tickets added! next id = 15
+2020-10-18 19:15:40.5569|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 19:15:40.5569|INFO|DotNetDbMidterm.Program|0,Summ,closed,med,you,them,everyone,Proj1st,1/1/2019 added to output
+2020-10-18 19:15:40.5830|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:0,Summ,closed,med,you,them,everyone,Proj1st,1/1/2019
+2020-10-18 19:15:40.5886|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 19:15:40.6033|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:1,test task,open,high,me,they,him|her,test project,12/25/2020
+2020-10-18 19:15:40.6176|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 19:15:40.6176|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020
+2020-10-18 19:15:40.6469|INFO|DotNetDbMidterm.Program|3,oldtask,open,med,dude,duderino,hisdudeness,oldtask,10/31/2020 added to output
+2020-10-18 19:15:40.6624|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:3,oldtask,open,med,dude,duderino,hisdudeness,oldtask,10/31/2020
+2020-10-18 19:15:40.6679|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
+2020-10-18 19:16:15.2055|INFO|DotNetDbMidterm.Program|Program exit
