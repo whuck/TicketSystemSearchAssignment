@@ -6,15 +6,6 @@ namespace DotNetDbMidterm
     static class FileReader
     {
         //FileReader class reads ticket files, parses file lines, and creates ticket objects
-        public static List<List<Ticket>> ReadAllFiles() {
-            Program.logger.Info("Begin read all files.");
-            //make multi dimensional output array and dump tickets in from file
-            List<List<Ticket>> output = new List<List<Ticket>>();
-            output.Add(ReadFile("bugs"));
-            output.Add(ReadFile("enhancements"));
-            output.Add(ReadFile("tasks"));
-            return output;
-        }
         public static List<Ticket> ReadFile(string type) {
             List<Ticket> output = new List<Ticket>();
             // assign fileName based on passed argument string

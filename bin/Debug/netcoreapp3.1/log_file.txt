@@ -893,3 +893,35 @@
 2020-10-18 19:15:40.6624|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:3,oldtask,open,med,dude,duderino,hisdudeness,oldtask,10/31/2020
 2020-10-18 19:15:40.6679|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
 2020-10-18 19:16:15.2055|INFO|DotNetDbMidterm.Program|Program exit
+2020-10-18 19:18:51.6940|INFO|DotNetDbMidterm.Program|Program started
+2020-10-18 19:18:51.7225|INFO|DotNetDbMidterm.Program|Reading Tickets.csv started!
+2020-10-18 19:18:51.7281|INFO|DotNetDbMidterm.Program|0,first!,open,ultra,they,you,someone,med added to output
+2020-10-18 19:18:51.7281|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:0,first!,open,ultra,they,you,someone,med
+2020-10-18 19:18:51.7441|INFO|DotNetDbMidterm.Program|4,HHelp,open,4,him,them,you,Extreme added to output
+2020-10-18 19:18:51.7441|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:4,HHelp,open,4,him,them,you,Extreme
+2020-10-18 19:18:51.7596|INFO|DotNetDbMidterm.Program|5,help!,open,2,me,they,he|him,HIGH added to output
+2020-10-18 19:18:51.7596|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:5,help!,open,2,me,they,he|him,HIGH
+2020-10-18 19:18:51.7596|INFO|DotNetDbMidterm.Program|6,hmm,close,0,they,him,xir|xe|me,NA added to output
+2020-10-18 19:18:51.7817|INFO|DotNetDbMidterm.Program|Begin Parsing bugs line:6,hmm,close,0,they,him,xir|xe|me,NA
+2020-10-18 19:18:51.7892|INFO|DotNetDbMidterm.Program|4 bug tickets added! next id = 7
+2020-10-18 19:18:51.7892|INFO|DotNetDbMidterm.Program|Reading Enhancements.csv started!
+2020-10-18 19:18:51.8065|INFO|DotNetDbMidterm.Program|0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75 added to output
+2020-10-18 19:18:51.8065|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:0,Summ,Sta,Prio,Submitr,Assi,Watching12,Sftwr,10,dunno,75
+2020-10-18 19:18:51.8204|INFO|DotNetDbMidterm.Program|12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50 added to output
+2020-10-18 19:18:51.8204|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:12,asdf,asdf,asdf,asdf,asdf,asdf,asdf,0,sure,50
+2020-10-18 19:18:51.8204|INFO|DotNetDbMidterm.Program|13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12 added to output
+2020-10-18 19:18:51.8438|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:13,add trys,open,3,me,him,they|them,vscode,0.00,ynot,12
+2020-10-18 19:18:51.8438|INFO|DotNetDbMidterm.Program|14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00 added to output
+2020-10-18 19:18:51.8610|INFO|DotNetDbMidterm.Program|Begin Parsing enhancements line:14,wellth,open,med,xir,xe,he|him,chrome,4.99,y not,5.00
+2020-10-18 19:18:51.8753|INFO|DotNetDbMidterm.Program|4 enhancement tickets added! next id = 15
+2020-10-18 19:18:51.8874|INFO|DotNetDbMidterm.Program|Reading Tasks.csv started!
+2020-10-18 19:18:51.9016|INFO|DotNetDbMidterm.Program|0,Summ,closed,med,you,them,everyone,Proj1st,1/1/2019 added to output
+2020-10-18 19:18:51.9153|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:0,Summ,closed,med,you,them,everyone,Proj1st,1/1/2019
+2020-10-18 19:18:51.9299|INFO|DotNetDbMidterm.Program|1,test task,open,high,me,they,him|her,test project,12/25/2020 added to output
+2020-10-18 19:18:51.9299|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:1,test task,open,high,me,they,him|her,test project,12/25/2020
+2020-10-18 19:18:51.9498|INFO|DotNetDbMidterm.Program|2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020 added to output
+2020-10-18 19:18:51.9656|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:2,validate,open,,me,they,xe|xim|xer,thisone,10/18/2020
+2020-10-18 19:18:51.9791|INFO|DotNetDbMidterm.Program|3,oldtask,open,med,dude,duderino,hisdudeness,oldtask,10/31/2020 added to output
+2020-10-18 19:18:51.9930|INFO|DotNetDbMidterm.Program|Begin Parsing tasks line:3,oldtask,open,med,dude,duderino,hisdudeness,oldtask,10/31/2020
+2020-10-18 19:18:52.0076|INFO|DotNetDbMidterm.Program|4 task tickets added! next id = 4
+2020-10-18 19:19:00.7216|INFO|DotNetDbMidterm.Program|Program exit
