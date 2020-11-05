@@ -5,7 +5,7 @@ namespace DotNetDbMidterm
         //Bug Class, child of ticket with its own properties
         //overriden ToString for terminal output formatting
         //overriden GetFileLineString for easy file writing
-        private string Severity;
+        public string Severity;
         public Bug(string ticketID, string summary, string status, string priority, string submitter, string assigned, string watching, string severity) : base(ticketID, summary, status, priority, submitter, assigned, watching){
             this.Severity = severity;
         }

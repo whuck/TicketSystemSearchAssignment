@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+
 namespace DotNetDbMidterm
 {
     static class TicketList
@@ -30,17 +32,35 @@ namespace DotNetDbMidterm
             }
             return newID+1;
         }
-        public static void findTickets(string findWhat, string findWhere) {
-            Console.WriteLine($"Looking for tickets with {findWhere}:\"{findWhat}\"");
+        public static List<Ticket> FindTickets(string findWhat, string findWhere) {
+            //Console.WriteLine($"Looking for tickets with {findWhere}:\"{findWhat}\"");
+            List<Ticket> results = new List<Ticket>();
+            List<Ticket> foundBugs = new List<Ticket>();
+            List<Ticket> foundEnh = new List<Ticket>();
+            List<Ticket> foundTask = new List<Ticket>();
+            //var results;
             switch (findWhere) {
                 case "status" :
-                
+                    foundBugs = bugs.Where(t => t.Status.Contains(findWhat)).ToList<Ticket>();
+                    foundEnh = enhancements.Where(t => t.Status.Contains(findWhat)).ToList<Ticket>();
+                    foundTask = tasks.Where(t => t.Status.Contains(findWhat)).ToList<Ticket>();
+                    results = foundBugs.Concat(foundEnh).Concat(foundTask).ToList<Ticket>();
                     break;
                 case "priority" :
+                    foundBugs = bugs.Where(t => t.Priority.Contains(findWhat)).ToList<Ticket>();
+                    foundEnh = enhancements.Where(t => t.Priority.Contains(findWhat)).ToList<Ticket>();
+                    foundTask = tasks.Where(t => t.Priority.Contains(findWhat)).ToList<Ticket>();
+                    results = foundBugs.Concat(foundEnh).Concat(foundTask).ToList<Ticket>();
                     break;
                 case "submitter" :
+                    foundBugs = bugs.Where(t => t.Submitter.Contains(findWhat)).ToList<Ticket>();
+                    foundEnh = enhancements.Where(t => t.Submitter.Contains(findWhat)).ToList<Ticket>();
+                    foundTask = tasks.Where(t => t.Submitter.Contains(findWhat)).ToList<Ticket>();
+                    results = foundBugs.Concat(foundEnh).Concat(foundTask).ToList<Ticket>();                
                     break;
+                default : break;
             }
+            return results;
         }
     }
 }

@@ -6,12 +6,12 @@ namespace DotNetDbMidterm
         //overriden ToString for terminal output formatting
         //virtual GetFileLineString for easy file writing
         public int TicketID {get;}
-        private string Summary {get; set;}
-        private string Status {get; set;}
-        private string Priority {get; set;}
-        private string Submitter {get; set;}
-        private string Assigned {get; set;}
-        private string Watching {get ;set;}
+        public string Summary {get; set;}
+        public string Status {get; set;}
+        public string Priority {get; set;}
+        public string Submitter {get; set;}
+        public string Assigned {get; set;}
+        public string Watching {get ;set;}
 
         public Ticket(string ticketID, string summary, string status, string priority, string submitter, string assigned, string watching) {
             this.TicketID = System.Int32.Parse(ticketID);

@@ -167,6 +167,7 @@ namespace DotNetDbMidterm
         }
         private static void SearchTickets() {
             string menuInput ="";
+            List<Ticket> foundList = new List<Ticket>();
             while (menuInput != "0") {
                 Ui.DisplayMenu("search");
                 menuInput = Console.ReadLine();
@@ -175,17 +176,17 @@ namespace DotNetDbMidterm
                     case "1":
                         Ui.GetDetailPrompt("status");
                         searchString = Console.ReadLine();
-                        TicketList.findTickets(searchString,"status");
+                        foundList = TicketList.FindTickets(searchString,"status");
                         break;
                     case "2":
                         Ui.GetDetailPrompt("priority");
                         searchString = Console.ReadLine();
-                        TicketList.findTickets(searchString,"priority");
+                        foundList = TicketList.FindTickets(searchString,"priority");
                         break;
                     case "3":
                         Ui.GetDetailPrompt("submitter");
                         searchString = Console.ReadLine();
-                        TicketList.findTickets(searchString,"submitter");
+                        foundList = TicketList.FindTickets(searchString,"submitter");
                         break;
                     default : break;
                 }
