@@ -165,6 +165,7 @@ namespace DotNetDbMidterm
             string lineData = (type == "bugs") ? Program._defaultFileData[0] : (type == "enhancements") ? Program._defaultFileData[1] : (type == "tasks") ? Program._defaultFileData[2] : null;
             FileWriter.WriteToFile(lineData,type);
         }
+        //searches tickets by status/priority/submitter
         private static void SearchTickets() {
             string menuInput ="";
             List<Ticket> foundList = new List<Ticket>();
@@ -191,9 +192,6 @@ namespace DotNetDbMidterm
                     default : break;
                 }
                 if(foundList.Count > 0) {
-                    // foreach (Ticket t in foundList) {
-                    //     Console.WriteLine(t.ToString()+t.GetType());
-                    // }
                     Ui.DisplayFoundTickets(foundList);
                 }
             }

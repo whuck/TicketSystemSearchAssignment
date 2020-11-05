@@ -48,11 +48,13 @@ namespace DotNetDbMidterm
         public static  void DisplayFoundTickets(List<Ticket> tickets) {
             string type = "";
             foreach (Ticket t in tickets) {
-                //if ticket in list is a new type, change display header
+                //if ticket in list is a new type, display new type header
                 // types are DotNetDbMidterm.[Bug,Enhancement,Task]
-                //substring(16) should ditch the "DotNetDbMidterm."
+                //substring(16) ditches the "DotNetDbMidterm."
+                //the ToLower()+"s" is to match the DisplayTicketHeader() type param
                 if(t.GetType().ToString().Substring(16).ToLower()+"s" != type) {
                     type = t.GetType().ToString().Substring(16).ToLower()+"s";
+                    Console.WriteLine();
                     DisplayTicketHeader(type);
                 }
                 DisplayTicket(t);
