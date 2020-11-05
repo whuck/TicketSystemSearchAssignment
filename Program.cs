@@ -178,21 +178,27 @@ namespace DotNetDbMidterm
                         Ui.GetDetailPrompt("status");
                         searchString = Console.ReadLine();
                         foundList = TicketList.FindTickets(searchString,"status");
+                        if(foundList.Count > 0 ) {
+                            Ui.DisplayFoundTickets(foundList);
+                        }
                         break;
                     case "2":
                         Ui.GetDetailPrompt("priority");
                         searchString = Console.ReadLine();
                         foundList = TicketList.FindTickets(searchString,"priority");
+                        if(foundList.Count > 0 ) {
+                            Ui.DisplayFoundTickets(foundList);
+                        }                        
                         break;
                     case "3":
                         Ui.GetDetailPrompt("submitter");
                         searchString = Console.ReadLine();
                         foundList = TicketList.FindTickets(searchString,"submitter");
+                        if(foundList.Count > 0 ) {
+                            Ui.DisplayFoundTickets(foundList);
+                        }                        
                         break;
                     default : break;
-                }
-                if(foundList.Count > 0) {
-                    Ui.DisplayFoundTickets(foundList);
                 }
             }
         }
