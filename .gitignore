@@ -2,3 +2,8 @@
 /bin/*
 .vscode
 bin/Debug/netcoreapp3.1/log_file.txt
+.vscode
+bin
+obj
+*.csproj
+project.code-workspace

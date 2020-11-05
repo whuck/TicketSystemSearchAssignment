@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 namespace DotNetDbMidterm
 {
@@ -28,6 +29,18 @@ namespace DotNetDbMidterm
                     break;
             }
             return newID+1;
+        }
+        public static void findTickets(string findWhat, string findWhere) {
+            Console.WriteLine($"Looking for tickets with {findWhere}:\"{findWhat}\"");
+            switch (findWhere) {
+                case "status" :
+                
+                    break;
+                case "priority" :
+                    break;
+                case "submitter" :
+                    break;
+            }
         }
     }
 }

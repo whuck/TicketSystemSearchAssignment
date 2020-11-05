@@ -67,6 +67,9 @@ namespace DotNetDbMidterm
                     case "2" :
                         CreateTickets(); //loops until  back to main menu is selected
                         break;
+                    case "3" :
+                        SearchTickets(); //loops until back to main menu is selected
+                        break;
                     default : break;
                 }
             }
@@ -100,8 +103,8 @@ namespace DotNetDbMidterm
             }
         }
         //display menu to choose what type to create, then create object, add to TicketList, and write to file
-        private static void CreateTickets() {
-            string menuInput ="";
+        private static void CreateTickets() {            
+            string menuInput = "";
             while (menuInput != "0") {
                 Ui.DisplayMenu("create");
                 menuInput = Console.ReadLine();
@@ -124,6 +127,7 @@ namespace DotNetDbMidterm
                         TicketList.tasks.Add(t);
                         FileWriter.WriteToFile(t.GetFileLineString(),"tasks");
                         break;
+                    default : break;
                 }
             }
         }
@@ -160,6 +164,32 @@ namespace DotNetDbMidterm
         private static void CreateFile(string type) {
             string lineData = (type == "bugs") ? Program._defaultFileData[0] : (type == "enhancements") ? Program._defaultFileData[1] : (type == "tasks") ? Program._defaultFileData[2] : null;
             FileWriter.WriteToFile(lineData,type);
+        }
+        private static void SearchTickets() {
+            string menuInput ="";
+            while (menuInput != "0") {
+                Ui.DisplayMenu("search");
+                menuInput = Console.ReadLine();
+                string searchString = "";
+                switch(menuInput) {
+                    case "1":
+                        Ui.GetDetailPrompt("status");
+                        searchString = Console.ReadLine();
+                        TicketList.findTickets(searchString,"status");
+                        break;
+                    case "2":
+                        Ui.GetDetailPrompt("priority");
+                        searchString = Console.ReadLine();
+                        TicketList.findTickets(searchString,"priority");
+                        break;
+                    case "3":
+                        Ui.GetDetailPrompt("submitter");
+                        searchString = Console.ReadLine();
+                        TicketList.findTickets(searchString,"submitter");
+                        break;
+                    default : break;
+                }
+            }
         }
     }
 }

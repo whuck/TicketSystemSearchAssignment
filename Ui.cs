@@ -21,6 +21,9 @@ namespace DotNetDbMidterm
                 case "create" : 
                     CreateMenu();
                     break;
+                case "search" :
+                    SearchMenu();
+                    break;
                 default : break;
             }
 
@@ -72,6 +75,7 @@ namespace DotNetDbMidterm
         private static void MainMenu() {
             Console.WriteLine("[1] Display Tickets");
             Console.WriteLine("[2] Create Ticket");
+            Console.WriteLine("[3] Search Tickets");
             Console.WriteLine("[0] Quit");
         }
         private static void DisplayMenu() {
@@ -87,9 +91,16 @@ namespace DotNetDbMidterm
             Console.WriteLine("[3] Create New Task Ticket");
             Console.WriteLine("[0] Back to Main Menu");
         }
+        private static void SearchMenu() {
+            Console.WriteLine("[1] Search by status");
+            Console.WriteLine("[2] Search by Priority");
+            Console.WriteLine("[3] Search by Submitter");
+            Console.WriteLine("[0] Back to Main Menu");
+        }
         public static void GetDetailPrompt(string prop) {
             Console.WriteLine($"Enter the {prop}: [NO COMMAS]");
         }
+        
 
     }
 }
