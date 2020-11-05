@@ -42,6 +42,23 @@ namespace DotNetDbMidterm
                 }
                 DisplayTicketFooter();            
         }
+
+        //I have to add this odd method because the way I was displaying tickets
+        //is too strict and it displays a list by type, and the search results is a list of mixed types
+        public static  void DisplayFoundTickets(List<Ticket> tickets) {
+            string type = "";
+            foreach (Ticket t in tickets) {
+                //if ticket in list is a new type, change display header
+                // types are DotNetDbMidterm.[Bug,Enhancement,Task]
+                //substring(16) should ditch the "DotNetDbMidterm."
+                if(t.GetType().ToString().Substring(16).ToLower()+"s" != type) {
+                    type = t.GetType().ToString().Substring(16).ToLower()+"s";
+                    DisplayTicketHeader(type);
+                }
+                DisplayTicket(t);
+            }
+            Console.WriteLine($"------------------------------{tickets.Count} Found!------------------------------------------------------");
+        }
         public static void DisplayTicket(Ticket t) {
             Console.WriteLine(t.ToString());
         }

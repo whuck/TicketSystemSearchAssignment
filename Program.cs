@@ -190,6 +190,12 @@ namespace DotNetDbMidterm
                         break;
                     default : break;
                 }
+                if(foundList.Count > 0) {
+                    // foreach (Ticket t in foundList) {
+                    //     Console.WriteLine(t.ToString()+t.GetType());
+                    // }
+                    Ui.DisplayFoundTickets(foundList);
+                }
             }
         }
     }
